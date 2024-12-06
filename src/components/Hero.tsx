@@ -2,15 +2,15 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-50" />
+    <section className="min-h-screen flex items-center justify-center px-4 bg-black relative overflow-hidden">
+      <div className="absolute  inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-50" />
 
-      <div className="text-center relative z-10 max-w-4xl mx-auto">
+      <div className="text-center relative z-10 max-w-4xl mx-auto ">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          className="text-4xl text-white sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
         >
           Hi, I'm{" "}
           <span className="animate-glow text-primary">Yonatan Ariel</span>
@@ -20,7 +20,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl  dark:text-gray-300 text-black mb-8 max-w-2xl mx-auto px-4"
+          className="text-lg sm:text-xl md:text-2xl text-gray-300  mb-8 max-w-2xl mx-auto px-4"
         >
           I’m a full-stack developer, and code is my true love. Want to be my
           second commit?

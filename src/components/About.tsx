@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-background">
+    <section id="about" className="py-20 px-4 bg-black">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export const About = () => {
           transition={{ delay: 0.2 }}
           className="space-y-6"
         >
-          <div className=" dark:bg-secondary/50 bg-black backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-primary/20 hover:border-primary/40 transition-colors shadow-lg hover:shadow-primary/20">
+          <div className="bg-secondary/50  backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-primary/20 hover:border-primary/40 transition-colors shadow-lg hover:shadow-primary/20">
             <p className="text-lg text-gray-300 leading-relaxed">
               I approach each challenge with full energy, and when something
               seems impossible, I see it as a chance to level up. My experience
