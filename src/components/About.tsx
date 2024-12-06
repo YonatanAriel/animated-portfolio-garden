@@ -29,46 +29,6 @@ export const About = () => {
               translation capabilities.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-black dark:bg-secondary/50 backdrop-blur-lg rounded-2xl p-6 border border-primary/20 hover:border-primary/40 transition-colors shadow-lg hover:shadow-primary/20"
-            >
-              <h3 className="text-xl font-semibold mb-4 text-primary ">
-                Education
-              </h3>
-              <p className="text-gray-300">
-                Beta - Binyamin Tech Academy
-                <br />
-                Full Stack Course Graduate
-                <br />
-                <span className="text-primary/80">
-                  Project selected as teaching tool
-                </span>
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-black dark:bg-secondary/50 backdrop-blur-lg rounded-2xl p-6 border border-primary/20 hover:border-primary/40 transition-colors shadow-lg hover:shadow-primary/20"
-            >
-              <h3 className="text-xl font-semibold mb-4 text-primary">
-                Experience
-              </h3>
-              <p className="text-gray-300">
-                Freelance Web Developer @ Chexi (2023)
-                <br />
-                IDF: Technology and Maintenance
-                <br />
-                Systems Coordinator (2020-2022)
-              </p>
-            </motion.div>
-          </div>
         </motion.div>
       </div>
     </section>

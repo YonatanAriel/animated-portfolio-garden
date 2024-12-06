@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 export const Skills = () => {
   const skills = [
     { name: "React.js", icon: "⚛️" },
-    { name: "TypeScript", icon: "TS" },
-    { name: "JavaScript", icon: "JS" },
+    { name: "TypeScript", icon: "👽" },
+    { name: "JavaScript", icon: "🎋" },
     { name: "Node.js", icon: "🟢" },
     { name: "Express", icon: "🚂" },
     { name: "MongoDB", icon: "🍃" },

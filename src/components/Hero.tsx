@@ -22,8 +22,8 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg sm:text-xl md:text-2xl  dark:text-gray-300 text-black mb-8 max-w-2xl mx-auto px-4"
         >
-          Code is my true love. As a full-stack developer, I quickly pick up new
-          skills and break down complex problems.
+          I’m a full-stack developer, and code is my true love. Want to be my
+          second commit?
         </motion.p>
 
         <motion.div
