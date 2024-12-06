@@ -7,14 +7,14 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
-    <div className="min-h-screen dark">
+    <main className="min-h-screen w-full bg-background">
       <ThemeToggle />
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </main>
   );
 };
 
