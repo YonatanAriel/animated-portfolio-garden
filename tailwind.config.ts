@@ -28,16 +28,16 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8B5CF6",
-          foreground: "#FFFFFF",
+          DEFAULT: "#39FF14", // Neon green
+          foreground: "#000000",
         },
         secondary: {
-          DEFAULT: "#0EA5E9",
+          DEFAULT: "#1A1A1A", // Dark gray/black
           foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#D946EF",
-          foreground: "#FFFFFF",
+          DEFAULT: "#00FF41", // Another shade of neon green
+          foreground: "#000000",
         },
       },
       keyframes: {
@@ -59,10 +59,28 @@ export default {
             opacity: "1",
           },
         },
+        "glow": {
+          "0%, 100%": {
+            textShadow: "0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14",
+          },
+          "50%": {
+            textShadow: "0 0 20px #39FF14, 0 0 30px #39FF14, 0 0 40px #39FF14",
+          },
+        },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "glow": "glow 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },
