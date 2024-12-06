@@ -15,9 +15,9 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-black/50">
+    <section id="skills" className="py-20 px-4  bg-background/50">
       <div className="max-w-4xl mx-auto">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -33,10 +33,14 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="card-gradient rounded-xl p-4 text-center hover:scale-105 transition-transform hover:shadow-lg hover:shadow-primary/20 group"
+              className=" card-gradient rounded-xl p-4 text-center hover:scale-105 transition-transform hover:shadow-lg hover:shadow-primary/20 group"
             >
-              <div className="text-2xl mb-2 group-hover:animate-bounce">{skill.icon}</div>
-              <div className="text-sm font-medium text-primary">{skill.name}</div>
+              <div className="text-2xl mb-2 group-hover:animate-bounce">
+                {skill.icon}
+              </div>
+              <div className="text-sm font-medium text-primary">
+                {skill.name}
+              </div>
             </motion.div>
           ))}
         </div>

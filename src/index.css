@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,9 @@
   }
 }
 
-html, body, #root {
+html,
+body,
+#root {
   @apply min-h-screen w-full bg-background text-foreground transition-colors duration-300;
 }
 
@@ -25,7 +27,7 @@ html, body, #root {
 }
 
 .card-gradient {
-  @apply bg-gradient-to-br from-secondary/80 to-secondary/60 backdrop-blur-lg border border-primary/20;
+  @apply bg-black dark:bg-gradient-to-br from-secondary/80 to-secondary/60 backdrop-blur-lg border border-primary/20;
 }
 
 .link-underline {
