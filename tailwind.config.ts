@@ -75,12 +75,100 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "grow": {
+          "0%": {
+            transform: "scale(0) translateY(20px)",
+            opacity: "0",
+          },
+          "50%": {
+            opacity: "0.5",
+          },
+          "100%": {
+            transform: "scale(1) translateY(0)",
+            opacity: "1",
+          },
+        },
+        "bloom": {
+          "0%": {
+            transform: "scale(1) rotate(0deg)",
+            filter: "brightness(1) hue-rotate(0deg)",
+          },
+          "50%": {
+            transform: "scale(1.1) rotate(2deg)",
+            filter: "brightness(1.2) hue-rotate(10deg)",
+          },
+          "100%": {
+            transform: "scale(1) rotate(0deg)",
+            filter: "brightness(1) hue-rotate(0deg)",
+          },
+        },
+        "sway": {
+          "0%, 100%": {
+            transform: "rotate(-2deg)",
+          },
+          "50%": {
+            transform: "rotate(2deg)",
+          },
+        },
+        "particle-float": {
+          "0%": {
+            transform: "translateY(0) translateX(0) scale(0)",
+            opacity: "0",
+          },
+          "10%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+          "90%": {
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(-100px) translateX(20px) scale(0)",
+            opacity: "0",
+          },
+        },
+        "sparkle": {
+          "0%, 100%": {
+            transform: "scale(0) rotate(0deg)",
+            opacity: "0",
+          },
+          "50%": {
+            transform: "scale(1) rotate(180deg)",
+            opacity: "1",
+          },
+        },
+        "pulse-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14",
+          },
+          "50%": {
+            boxShadow: "0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14",
+          },
+        },
+        "wind": {
+          "0%, 100%": {
+            transform: "translateX(0) rotate(0deg)",
+          },
+          "25%": {
+            transform: "translateX(2px) rotate(1deg)",
+          },
+          "75%": {
+            transform: "translateX(-2px) rotate(-1deg)",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
         "glow": "glow 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
+        "grow": "grow 1s ease-out forwards",
+        "bloom": "bloom 0.6s ease-in-out",
+        "sway": "sway 4s ease-in-out infinite",
+        "particle-float": "particle-float 3s ease-out infinite",
+        "sparkle": "sparkle 2s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "wind": "wind 3s ease-in-out infinite",
       },
     },
   },
